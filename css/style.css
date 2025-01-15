@@ -1,0 +1,299 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", serif;
+  font-size: 23;
+  font-style:normal;
+  font-weight: 400;
+
+}
+
+.header {
+  background-image: url(../Image/fox.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo__img {
+  width: 70px;
+  height: 60px;
+}
+
+.logo__text {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 32px;
+  padding-left: 15px;
+}
+
+
+.nav ul {
+    display: flex; 
+    list-style: none; 
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+.nav li {
+  padding-left: 60px;
+  text-decoration: none;
+  color: #CD6326;
+  cursor:pointer;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 23px;
+}
+
+.nav a:hover {
+  color:  #E39128; 
+}
+
+.input-button:active {
+  background-color: #8F5613;
+  border-color: #8F5613; 
+}
+
+.nav button {
+width: 120px;
+height: 50px;
+background-color: transparent;
+border: 2px solid;
+border-color: #CD6326;
+border-radius: 5px;
+color: #fff;
+font-size: 23px;
+cursor:pointer;
+}
+
+nav button:hover {
+  background-color: #E39128;
+  border-color: #E39128; 
+}
+
+nav button:active {
+  background-color: #8F5613;
+  border-color: #8F5613; 
+}
+
+.header__text {
+  padding-top: 170px;
+  color:#fff;
+}
+
+.header__title {
+  padding-bottom: 70px;
+  font-size: 48px;
+  font-weight: 400;
+  color: #CD6326;
+}
+
+.header__content {
+  width: 276px;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
+
+.header__btn {
+  width: 160px;
+  height: 60px;
+  border-radius: 5px;
+  border-color: #CD6326;
+  background: #CD6326;
+  font-size: 23px;
+  color:#fff;
+  cursor:pointer;
+}
+
+.header__btn:hover {
+  background-color: #E39128;
+  border-color: #E39128; 
+}
+
+.header__btn:active {
+  background-color: #8F5613;
+  border-color: #8F5613; 
+}
+
+.animals {
+  background-color: #CCCCCC;
+  padding: 0 120px;
+  text-align: center;
+}
+
+.animals__title {
+  padding-top: 140px;
+  font-size: 48px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.animals__text {
+  padding-top: 40px;
+  padding-bottom: 130px;
+  font-size: 24px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.animals__gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.strela {
+  width: 30px;
+  height: 70px;
+}
+
+.gallery__items {
+  width: 300px;
+  height: 360px;
+ 
+
+}
+.gallery__img {
+ 
+}
+
+
+.content__text {
+  
+}
+
+.animals__form-text {
+  padding-top: 250px;
+  padding-bottom: 60px;
+  font-size: 27px;
+  font-weight: 400;
+  color: #666666;
+
+}
+
+.input-group {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  padding-bottom: 240px;
+
+
+}
+
+
+.input-field {
+  width: 540px;
+  height: 60px;
+  border: 2px solid;
+  border-color: #666666;
+  background-color: transparent;
+  font-size: 23px;
+  font-weight: 400;
+  padding-left: 15px;
+  border-right: none;
+}
+
+.input-button {
+  padding: 0;
+  width: 120px;
+  height: 60px;
+  background-color: #CD6326;
+  border: 1px solid;
+  border-color: #CD6326;
+  border-radius: 0 10px 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-button:hover {
+  background-color: #E39128;
+  border-color: #E39128; 
+}
+
+.input-button:active {
+  background-color: #8F5613;
+  border-color: #8F5613; 
+}
+
+.footer {
+  background-image: url(../Image/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  padding: 150px 120px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list a {
+  display: flex;
+  text-decoration: none;
+
+}
+
+.social__item img {
+  padding-left: 20px;
+  
+}
+
+.list ul {
+  display: flex; 
+  gap: 130px;
+  list-style: none; 
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+}
+.list li {
+text-decoration: none;
+color: #CD6326;
+cursor:pointer;
+}
+
+.list a {
+text-decoration: none;
+color: #fff;
+font-size: 23px;
+}
+
+.list a:hover {
+color:  #E39128; 
+}
