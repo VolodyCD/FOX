@@ -297,3 +297,47 @@ font-size: 23px;
 .list a:hover {
 color:  #E39128; 
 }
+
+@media(max-width:1220px){
+  .header {
+    background-image: url(../Image/fox.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+  }
+
+  .header__btn {
+    margin-bottom: 100px;
+  }
+
+  .nav li {
+    padding-left: 30px;
+}
+
+.header__title {
+  padding-bottom: 40px;
+}
+
+.animals__gallery {
+  gap: 20px;
+}
+
+.list ul {
+  gap: 20px;
+}
+
+.social__item img {
+  padding-left: 10px; 
+}
+
+.input-field {
+  width: 340px;
+}
+@media(max-width:800px){
+.footer {
+
+}
+}
+@media(max-width:520px){
+
+}
