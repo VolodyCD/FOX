@@ -19,6 +19,10 @@ body {
 
 }
 
+.container {
+  padding: 0 120px;
+}
+
 .header {
   background-image: url(../Image/fox.png);
   background-repeat: no-repeat;
@@ -26,8 +30,6 @@ body {
   background-position: center;
   min-height: 100vh;
   padding-top: 20px;
-  padding-left: 120px;
-  padding-right: 120px;
 }
 
 .header__nav {
@@ -152,7 +154,6 @@ nav button:active {
 
 .animals {
   background-color: #CCCCCC;
-  padding: 0 120px;
   text-align: center;
 }
 
@@ -290,6 +291,17 @@ nav button:active {
 .list a:hover {
   color: #E39128;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:1220px) {
 
