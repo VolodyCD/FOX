@@ -55,8 +55,43 @@ body {
   padding-left: 15px;
 }
 
-.nav-btn {
+/* .nav-btn {
   display: none;
+} */
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.burger span {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: #E39128;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #E39128;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
 }
 
 
@@ -177,6 +212,26 @@ nav button:active {
   justify-content: center;
   align-items: center;
   gap: 60px;
+}
+
+.gallery__img {
+  border-radius: 30px;
+}
+
+.gallery__items {
+  position: relative;
+}
+
+.content__text {
+  position: absolute;
+  bottom: 65px;
+  left: 65px;
+  color: #fff;
+}
+
+.content__text.fly{
+  left: 105px;
+
 }
 
 .strela {
@@ -306,6 +361,7 @@ nav button:active {
 @media(max-width:1220px) {
 
 
+
   .header {
     background-image: url(../Image/fox.png);
     background-repeat: no-repeat;
@@ -325,15 +381,15 @@ nav button:active {
   .header__title {
     padding-bottom: 40px;
   }
-  
-.one {
-display: none;
-}
-  
+
+  .one {
+    display: none;
+  }
+
   .strela {
     width: 15px;
     height: 35px;
-}
+  }
 
   .list ul {
     gap: 20px;
@@ -350,6 +406,11 @@ display: none;
 }
 
 @media(max-width:1050px) {
+
+  .container {
+    padding: 0 60px;
+  }
+
   .logo {
     justify-content: center;
     padding-bottom: 30px;
@@ -386,6 +447,9 @@ display: none;
 
 @media(max-width:800px) {
 
+  .container {
+    padding: 0 20px;
+  }
 
   .header {
     background-image: url(../Image/fox.png);
@@ -406,21 +470,24 @@ display: none;
   }
 
 
-  .nav-btn {
+  /* .nav-btn {
     font-size: 45px;
     border: none;
     background-color: transparent;
     color: #CD6326;
     display: block;
     cursor: pointer;
-  }
-
-  .nav-btn:hover {
+  } */
+.burger {
+  display: flex;
+  margin-top: 22px;
+}
+  .burger:hover {
     color: #666666;
   }
 
   .header__nav:hover .nav {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-right: 25px;
     padding-bottom: 25px;
     display: block;
@@ -434,7 +501,7 @@ display: none;
 
   .two {
     display: none;
-    }
+  }
 
   .nav ul {
     display: block;
@@ -460,4 +527,17 @@ display: none;
 
 }
 
-@media(max-width:520px) {}
+@media(max-width:520px) {
+
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  .container {
+    padding: 0 10px;
+  }
+
+  .input-field {
+    width: 290px;
+}
+}
